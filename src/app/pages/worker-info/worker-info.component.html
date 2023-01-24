@@ -1,0 +1,36 @@
+<div class="worker">
+  <div class="worker__info">
+    <div class="worker__photo">
+    </div>
+    <div class="worker__about">
+      <h2 class="worker__about-name">Mher Frangyan</h2>
+      <ngx-typed-js [strings]="positions"
+                    [loop]="true" [backDelay]="1000"
+                    [typeSpeed]="80">
+        <span class="typing"></span>
+      </ngx-typed-js>
+      <div class="worker__about-social">
+        <a  class="link" href="https://www.facebook.com/Mher.Frangyan" target="_blank">
+          <fa-icon [icon]="fb"></fa-icon>
+        </a>
+        <a class="link" href="https://github.com/MherFrangyan" target="_blank">
+          <fa-icon [icon]="git"></fa-icon>
+        </a>
+        <a class="link" href="https://www.linkedin.com/in/mher-frangyan-a9459a176/" target="_blank">
+          <fa-icon [icon]="linkedin"></fa-icon>
+        </a>
+        <a class="link" href="https://tgram.link/MherFrangyan" target="_blank">
+          <fa-icon [icon]="telegram"></fa-icon>
+        </a>
+      </div>
+      <span class="worker__about-line"></span>
+      <button class="worker__about-btn_download" (click)="downloadPdf()">
+        Download CV 
+        <fa-icon [icon]="download"></fa-icon>
+      </button>
+    </div>
+  </div>
+  <div class="worker__navbar">
+    <cv-navbar></cv-navbar>
+  </div>
+</div>

@@ -1,0 +1,47 @@
+@import "src/assets/styles/variables";
+
+.navbar {
+  &__list {
+    padding: 0;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px;
+    background: $white;
+    width: 72px;
+    &-item {
+      width: 100%;
+      position: relative;
+      list-style: none;
+      &::before{
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 1px;
+        background: radial-gradient(ellipse at right,#ddd 0,rgba(255,255,255,0) 70%);
+      }
+    }
+    &-link {
+      padding: 13px 3px;
+      font-family: 'Poppins', sans-serif;
+      font-size: 11px;
+      font-weight: 500;
+      text-transform: uppercase;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      gap: 5px;
+      color: $label;
+      text-decoration: none;
+      transition: all .2s;
+      &:hover{
+        color: $text-color;
+      }
+    }
+  }
+}

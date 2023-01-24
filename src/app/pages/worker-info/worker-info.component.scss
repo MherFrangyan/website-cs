@@ -1,0 +1,111 @@
+@import "src/assets/styles/variables";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap');
+
+.worker {
+  box-shadow: -14px -16px 0px 4px #7b8b80ab;
+  width: 100%;
+  height: 100%;
+  max-width: 480px;
+  border-radius: 4px;
+  position: relative;
+
+  &__info {
+    max-height: 640px;
+    background: $white;
+    border-radius: 6px;
+  }
+
+  &__photo {
+    height: 62vh;
+    max-height: 590px;
+    background-size: cover;
+    background-position: 0 75%;
+    background-repeat: no-repeat;
+    //background-image: url("/assets/image/DDHF2646.JPG");
+    border-radius: 6px;
+    clip-path: polygon(43% 75%, 100% 60%, 100% 0, 0 0, 0 59%);
+  }
+
+  &__about {
+    text-align: center;
+    transform: translateY(-100px);
+    background: $white;
+    border-radius: 4px;
+
+    &-name {
+      font-family: 'Poppins', sans-serif;
+      text-align: center;
+      line-height: 32px;
+      font-weight: 400;
+      font-size: 34px;
+      color: $label;
+    }
+
+    &-social {
+      margin-top: 32px;
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+
+      .link {
+        ::ng-deep {
+          svg {
+            color: $label;
+
+            transition: all .2s;
+
+            &:hover {
+              color: $text-color;
+            }
+          }
+        }
+
+        display: inline-block;
+      }
+    }
+
+    &-line {
+      display: block;
+      margin-top: 10px;
+      height: 2px;
+      background: radial-gradient(ellipse at center, #ddd 0, rgba(255, 255, 255, 0) 70%);
+    }
+
+    &-btn_download {
+      background: none;
+      border: none;
+      cursor: pointer;
+      text-transform: uppercase;
+      font-size: 14px;
+      color: $label;
+      font-weight: 500;
+      line-height: 70px;
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      margin: auto;
+      transition: all .2s;
+
+      &:hover {
+        color: $text-color;
+      }
+    }
+
+    ngx-typed-js {
+      font-family: 'Poppins', sans-serif;
+      text-align: center;
+      color: $text-color;
+      font-size: 16px;
+      line-height: 20px;
+      height: 20px;
+      font-weight: 400;
+    }
+  }
+
+  &__navbar {
+    position: absolute;
+    top: 0;
+    left: -82px;
+  }
+
+}

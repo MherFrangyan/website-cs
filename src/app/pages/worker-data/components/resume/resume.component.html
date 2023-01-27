@@ -1,0 +1,104 @@
+<div class="workers">
+  <div class="workers__data">
+    <div class="workers__data-about workers__about-block">
+      <h2 class="workers__title">
+        Resume
+      </h2>
+      <div class="workers__data-block">
+        <div class="workers__data-experience">
+          <h2 class="workers__data-title">
+            <fa-icon [icon]="case" [size]="'2x'"></fa-icon>
+            <span>Experience</span>
+          </h2>
+          <div class="workers__data-workplace">
+            <div class="workers__data-workplace_block">
+              <p class="workers__data-workplace_date workers__data-workplace_present">2020 - Present</p>
+              <h4 class="workers__data-workplace_position">Front-end Angular Developer</h4>
+              <span class="workers__data-workplace_name">Brain Fors LLC</span>
+              <p class="workers__data-workplace-desc">
+                Delivering a complete front-end application.
+                Ensuring high performance on mobile and desktop.
+                Cooperating with the back-end developer in the
+                process of building the RESTful API.
+                Communicating with external web services.
+              </p>
+            </div>
+            <div class="workers__data-workplace_block last">
+              <p class="workers__data-workplace_date">2019 - 2020</p>
+              <h4 class="workers__data-workplace_position">Front-end Developer</h4>
+              <span class="workers__data-workplace_name">Friend LLC</span>
+              <p class="workers__data-workplace-desc">
+                Ensuring high performance on mobile and desktop.
+                Writing tested, idiomatic, and documented JavaScript, HTML and CSS.
+                Coordinating the workflow between me, the graphic designer and the HTML coder
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="workers__data-education">
+          <h2 class="workers__data-title">
+            <fa-icon [icon]="study" [size]="'2x'"></fa-icon>
+            <span>education</span>
+          </h2>
+          <div class="workers__data-workplace">
+            <div class="workers__data-workplace_block last">
+              <p class="workers__data-workplace_date">2013 - 2019</p>
+              <h4 class="workers__data-workplace_position">National Polytechnic University of Armenia</h4>
+              <span class="workers__data-workplace_name">Yerevan</span>
+              <p class="workers__data-workplace-desc">
+                Information technology & Computer Studies.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <h2 class="workers__title">
+        <span class="workers__change-color">
+          My
+        </span>
+          Skills
+      </h2>
+      <div class="workers__data-block">
+        <div class="workers__data-experience">
+          <h2 class="workers__data-title">
+            <fa-icon [icon]="list" [size]="'2x'"></fa-icon>
+            <span>Knowledge</span>
+          </h2>
+          <div class="workers__data-knowledge">
+            <ul class="workers__data-knowledge-list">
+              <li class="workers__data-knowledge-item" *ngFor="let list of knowledgeList">
+                <span class="workers__data-knowledge-mark">
+                  <fa-icon [icon]="check" [size]="'2x'"></fa-icon>
+                </span>
+                <p class="workers__data-knowledge-text">{{list.name}}</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="workers__data-education">
+          <h2 class="workers__data-title">
+            <fa-icon [icon]="lang" [size]="'2x'"></fa-icon>
+            <span>Languages</span>
+          </h2>
+          <div class="workers__data-workplace">
+            <div class="workers__data-workplace_block last">
+              <h4 class="workers__data-workplace_position">English</h4>
+              <span class="workers__data-workplace_name">Good Written Skills, Bad Verbal Skills</span>
+            </div>
+            <div class="workers__data-workplace_block last" style="margin-top: 0">
+              <h4 class="workers__data-workplace_position">Russian</h4>
+              <span class="workers__data-workplace_name">Advanced</span>
+            </div>
+            <div class="workers__data-workplace_block last" style="margin-top: 0">
+              <h4 class="workers__data-workplace_position">Armenian</h4>
+              <span class="workers__data-workplace_name">Advanced</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,16 @@
+<div class="data" *ngIf="nav.isOpened | async as val">
+  <div [ngClass]="val.toLowerCase() === 'about' ? 'active' : ''" #about>
+    <cv-about ></cv-about>
+  </div>
+  <div [ngClass]="val.toLowerCase() === 'resume' ? 'active' : ''" #resume>
+      <cv-resume></cv-resume>
+  </div>
+  <div [ngClass]="val.toLowerCase() === 'works' ? 'active' : ''" #portfolio>
+    <cv-portfolio></cv-portfolio>
+  </div>
+  <div [ngClass]="val.toLowerCase() === 'contact' ? 'active' : ''" #contact>
+    <cv-contact></cv-contact>
+  </div>
+</div>
+
+

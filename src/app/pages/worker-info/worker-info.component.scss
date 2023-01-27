@@ -1,5 +1,4 @@
 @import "src/assets/styles/variables";
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap');
 
 .worker {
   box-shadow: -14px -16px 0px 4px #7b8b80ab;
@@ -9,21 +8,46 @@
   border-radius: 4px;
   position: relative;
 
+  @media (max-width: 1070px) {
+    max-width: 100%;
+  }
+
+  @media(max-width: 640px) {
+    box-shadow: none;
+  }
+
   &__info {
     max-height: 640px;
     background: $white;
     border-radius: 6px;
+    box-shadow: 10px 10px 15px rgb(0 0 0 / 5%);
+    position: relative;
+    z-index: 5;
+    @media (max-width: 1070px) {
+      max-height: initial;
+      box-shadow: none;
+    }
   }
 
   &__photo {
     height: 62vh;
     max-height: 590px;
-    background-size: cover;
-    background-position: 0 75%;
+    background-size: contain;
     background-repeat: no-repeat;
-    //background-image: url("/assets/image/DDHF2646.JPG");
+    background-image: url("/assets/image/DDHF2646.JPG");
     border-radius: 6px;
     clip-path: polygon(43% 75%, 100% 60%, 100% 0, 0 0, 0 59%);
+
+    @media (max-width: 1070px) {
+      background-size: cover;
+      background-position: center;
+      height: 610px;
+      max-height: initial;
+    }
+
+    @media(max-width:767px) {
+      height: 470px;
+    }
   }
 
   &__about {
@@ -37,7 +61,7 @@
       text-align: center;
       line-height: 32px;
       font-weight: 400;
-      font-size: 34px;
+      font-size: 2rem;
       color: $label;
     }
 
@@ -106,6 +130,9 @@
     position: absolute;
     top: 0;
     left: -82px;
+    @media(max-width: 640px) {
+      display: none;
+    }
   }
 
 }

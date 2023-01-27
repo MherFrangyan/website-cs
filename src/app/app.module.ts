@@ -4,6 +4,9 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './component/app.component';
 import { FontAwesomeModule } from "@fortawesome/angular-fontawesome";
+import { HttpClientModule } from "@angular/common/http";
+import { ToastrModule } from "ngx-toastr";
+import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 
 @NgModule({
   declarations: [
@@ -12,7 +15,10 @@ import { FontAwesomeModule } from "@fortawesome/angular-fontawesome";
   imports: [
     BrowserModule,
     FontAwesomeModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    BrowserAnimationsModule,
+    ToastrModule.forRoot(),
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,0 +1,76 @@
+<div class="workers">
+  <div class="workers__data">
+    <div class="workers__data-about workers__about-block">
+      <h2 class="workers__title">
+        <span class="workers__change-color">
+          Get
+        </span>
+         in Touch
+      </h2>
+      <div class="workers__data-contact">
+        <div class="workers__data-contact_maps">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12113.356567861943!2d43.95940999662938!3d40.62240217536866!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x406a0ab4e20dfc89%3A0xe12d7d65f4835ca2!2z0JDRgNGC0LjQug!5e0!3m2!1sru!2s!4v1674721155546!5m2!1sru!2s"
+                  style="border:0;" width="100%" height="100%"
+                  loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="workers__content-list">
+          <div>
+            <div class="workers__content-list-item">
+              <h4 class="age"> ADDRESS . . . . . </h4>
+              <span class="age-value">Artik, RA</span>
+            </div>
+            <div class="workers__content-list-item">
+              <h4 class="age"> EMAIL . . . . .</h4>
+              <span class="age-value" style="text-transform: lowercase">mherfrangyan0@gmail.com</span>
+            </div>
+          </div>
+          <div>
+            <div class="workers__content-list-item">
+              <h4 class="age"> PHONE . . . . .</h4>
+              <span class="age-value">+374 93949004</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <h2 class="workers__title">
+        <span class="workers__change-color">
+          Contact
+        </span>
+          Form
+      </h2>
+      <form class="workers__data-form"
+            (ngSubmit)="send()"
+            [formGroup]="form">
+        <div class="workers__data-form_fields">
+          <input
+            type="text"
+            formControlName="name"
+            placeholder="Full Name"
+            class="workers__data-form_input">
+          <input
+            type="email"
+            formControlName="email"
+            placeholder="Email Address"
+            class="workers__data-form_input">
+        </div>
+        <textarea
+          class="workers__data-form_input workers__data-form_textarea"
+          spellcheck="false"
+          placeholder="Your Message"
+          formControlName="message">
+        </textarea>
+        <div class="workers__data-form_footer">
+          <button
+            class="workers__data-form_btn"
+            [disabled]="form.invalid || loader"
+            type="submit">
+            Send Message
+            <fa-icon [icon]="sendIcon"></fa-icon>
+          </button>
+          <span class="workers__data-form_required"><b>* </b> All fields are required</span>
+        </div>
+
+      </form>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,161 @@
+@import "src/assets/styles/variables";
+
+.workers {
+  &__data {
+
+    &-block {
+      display: flex;
+      justify-content: space-between;
+      @media(max-width:767px) {
+        flex-direction: column;
+      }
+      .last{
+        &::after{
+          content: none;
+        }
+        @media(max-width:767px) {
+          margin-bottom: 20px;
+        }
+      }
+    }
+
+    &-education {
+      flex: 1;
+      padding: 30px 0 0 25px;
+      position: relative;
+
+      @media(max-width:767px) {
+        padding: 0;
+      }
+      &::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 1px;
+        height: 100%;
+        background: radial-gradient(ellipse at top, #ddd 0, rgba(255, 255, 255, 0) 70%);
+        @media(max-width:767px) {
+          content: none;
+        }
+      }
+    }
+
+    &-experience {
+      flex: 1;
+      padding: 30px 5px 0;
+    }
+
+    &-title {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      margin: 0;
+      padding: 0 0 25px;
+      font-family: 'Poppins', sans-serif;
+      line-height: 14px;
+      color: $label;
+      font-size: 17px;
+      position: relative;
+      text-transform: uppercase;
+
+      fa-icon {
+        color: $text-color;
+      }
+
+      &::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 2px;
+        background: radial-gradient(ellipse at center, #ddd 0, rgba(255, 255, 255, 0) 70%);
+      }
+    }
+
+    &-workplace {
+      font-family: 'Poppins', sans-serif;
+    }
+
+    &-workplace_block {
+      padding-bottom: 20px;
+      position: relative;
+      margin-top: 25px;
+
+      &::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 2px;
+        background: radial-gradient(ellipse at center, #ddd 0, rgba(255, 255, 255, 0) 70%);
+      }
+    }
+
+    &-workplace_date {
+      display: inline-block;
+      border-radius: 4px;
+      margin: 0 0 11px;
+      padding: 0 5px;
+      font-size: 13px;
+      line-height: 18px;
+      color: #ccc;
+      font-weight: 400;
+      text-transform: none;
+      border: 1px solid #eee;
+    }
+
+    &-workplace_present {
+      border: 1px solid $text-color;
+      color: $text-color;
+    }
+
+    &-workplace_position {
+      margin: 0;
+      font-size: 17px;
+      color: $label;
+      font-weight: 600;
+      text-transform: none;
+    }
+
+    &-workplace_name {
+      margin: 0 0 11px;
+      font-size: 14px;
+      color: #999;
+      font-weight: 400;
+      text-transform: none;
+    }
+
+    &-workplace-desc {
+      font-size: 16px;
+      letter-spacing: 1.5px;
+      line-height: 1.8em;
+      color: $label;
+    }
+    &-knowledge{
+      font-family: 'Poppins', sans-serif;
+    }
+    &-knowledge-list{
+      padding: 0;
+    }
+    &-knowledge-item{
+      list-style: none;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      gap: 20px;
+    }
+    &-knowledge-mark{
+      color: $text-color;
+      font-size: 12px;
+    }
+    &-knowledge-text{
+      font-size: 16px;
+      margin: 0;
+      line-height: 1.8em;
+      color: $label;
+    }
+  }
+}

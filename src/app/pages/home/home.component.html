@@ -1,8 +1,19 @@
 <section class="home">
+  <div class="home__navbar">
+    <div class="home__worker">
+      <h1 class="home__about-name">Mher Frangyan</h1>
+      <ngx-typed-js [strings]="positions"
+                    [loop]="true" [backDelay]="2500"
+                    [typeSpeed]="80">
+        <span class="typing"></span>
+      </ngx-typed-js>
+    </div>
+    <cv-navbar></cv-navbar>
+  </div>
   <div class="bubbles">
     <div class="bubble" *ngFor="let i of bubble"></div>
   </div>
   <div class="home__container">
-    <cv-dashboard></cv-dashboard>
+    <cv-dashboard style="flex: 1"></cv-dashboard>
   </div>
 </section>

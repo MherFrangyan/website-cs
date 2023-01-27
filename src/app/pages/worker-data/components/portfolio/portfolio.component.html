@@ -1,0 +1,45 @@
+<div class="workers">
+  <div class="workers__data">
+    <div class="workers__data-about workers__about-block">
+      <h2 class="workers__title">
+        Portfolio
+      </h2>
+      <div class="workers__data-portfolio">
+        <div class="workers__data-portfolio_item workers__data-portfolio_left">
+          <div class="workers__data-portfolio-block"
+               *ngFor="let item of portfolioListLeft">
+            <div class="workers__data-portfolio-img">
+              <img [src]="'assets/image/portfolio/' + item.img" alt="img">
+              <div class="workers__data-portfolio-bgFon">
+                 <a [href]="item.url"
+                    class="workers__data-portfolio-link"
+                    target="_blank">
+                   <fa-icon [icon]="link" [size]="'2x'"></fa-icon>
+                   <span>Visit page</span>
+                 </a>
+              </div>
+            </div>
+            <h2 class="workers__data-portfolio-title">{{item.name}}</h2>
+          </div>
+        </div>
+        <div class="workers__data-portfolio_item">
+          <div class="workers__data-portfolio-block"
+               *ngFor="let item of portfolioListRight">
+            <div class="workers__data-portfolio-img">
+              <img [src]="'assets/image/portfolio/'+ item.img" alt="img">
+              <div class="workers__data-portfolio-bgFon">
+                <a href="https://www.airenoworld.com/"
+                   class="workers__data-portfolio-link"
+                   target="_blank">
+                  <fa-icon [icon]="link" [size]="'2x'"></fa-icon>
+                  <span>Visit page</span>
+                </a>
+              </div>
+            </div>
+            <h2 class="workers__data-portfolio-title">{{item.name}}</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,7 +1,9 @@
 <div class="navbar">
   <ul class="navbar__list">
     <li class="navbar__list-item" *ngFor="let item of navbarList">
-      <a href="" class="navbar__list-link">
+      <a href="javascript:void(0)" (click)="changePage(item.name)"
+         [class.navbar__list-active]="activeNavItem === item.name"
+         class="navbar__list-link">
         <fa-icon [icon]="item.icon" [size]="'xl'"></fa-icon>
         <span>{{item.name}}</span>
       </a>

@@ -37,7 +37,7 @@ export class ContactComponent {
     console.log(this.form.value);
     this.emailService.sendEmail(body).subscribe(res => {
       this.toastr.success('Message sent successfully');
-      window.open('https://mailthis.to/confirm', '_blank');
+      location.href = 'https://mailthis.to/confirm'
       this.loader = false;
       this.form.reset();
       this.form.enabled;

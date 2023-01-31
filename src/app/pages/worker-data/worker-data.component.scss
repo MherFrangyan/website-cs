@@ -127,6 +127,7 @@
       &-item_list {
         display: flex;
         align-items: center;
+        flex-wrap: wrap;
         justify-content: flex-start;
         gap: 15px;
         @media(max-width: 767px) {

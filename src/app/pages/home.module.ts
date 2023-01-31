@@ -13,6 +13,7 @@ import { ResumeComponent } from "./worker-data/components/resume/resume.componen
 import { PortfolioComponent } from "./worker-data/components/portfolio/portfolio.component";
 import { ContactComponent } from "./worker-data/components/contact/contact.component";
 import { ReactiveFormsModule } from "@angular/forms";
+import { SharedModule } from "../shared/shared.module";
 
 @NgModule({
   declarations: [
@@ -32,6 +33,7 @@ import { ReactiveFormsModule } from "@angular/forms";
     ReactiveFormsModule,
     NgxTypedJsModule,
     FontAwesomeModule,
+    SharedModule
   ]
 })
 

@@ -1,4 +1,4 @@
-import { Component, OnInit } from "@angular/core";
+import { Component, HostListener, OnInit } from "@angular/core";
 import { faUser, faFileText, faCode, faContactBook, IconDefinition } from "@fortawesome/free-solid-svg-icons";
 import { NavbarService } from "../../service/navbar.service";
 

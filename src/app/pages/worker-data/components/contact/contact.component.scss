@@ -43,6 +43,7 @@
       height: 50px;
       color: $label;
       transition: all .5s;
+      border-radius: 0;
 
       &:focus {
         border-color: $text-color;

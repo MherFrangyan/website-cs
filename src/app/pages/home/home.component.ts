@@ -1,6 +1,6 @@
 import { Component, OnDestroy, OnInit } from "@angular/core";
 import { Title } from "@angular/platform-browser";
-import { Subject, Subscription, timer } from "rxjs";
+import { Subscription, timer } from "rxjs";
 
 @Component({
   selector: 'cv-home',

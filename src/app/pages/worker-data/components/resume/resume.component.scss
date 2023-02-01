@@ -133,6 +133,10 @@
       letter-spacing: 1.5px;
       line-height: 1.8em;
       color: $label;
+      @media(max-width: 640px) {
+        font-size: 14px;
+        line-height: 1.5em;
+      }
     }
     &-knowledge{
       font-family: 'Poppins', sans-serif;
@@ -156,6 +160,11 @@
       margin: 0;
       line-height: 1.8em;
       color: $label;
+
+      @media(max-width: 640px) {
+        font-size: 14px;
+        line-height: 1.2em;
+      }
     }
   }
 }

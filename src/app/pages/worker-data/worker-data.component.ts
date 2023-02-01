@@ -1,6 +1,5 @@
 import { AfterViewInit, Component, ElementRef, ViewChild } from "@angular/core";
 import { NavbarService } from "../../service/navbar.service";
-import { brands } from "@fortawesome/fontawesome-svg-core/import.macro";
 
 @Component({
   selector: 'cv-worker-data',
@@ -17,7 +16,6 @@ export class WorkerDataComponent implements AfterViewInit{
 
   public ngAfterViewInit(): void {
     this.nav.isOpened.subscribe(item => {
-      console.log(item);
       switch (item.toLowerCase()) {
         case 'about':
           this.about.nativeElement.scrollIntoView({behavior: 'smooth', block: 'start', inline: 'start'})

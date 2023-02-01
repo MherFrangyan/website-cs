@@ -66,6 +66,10 @@
       line-height: 1.8em;
       font-family: 'Poppins', sans-serif;
       color: $label;
+      @media(max-width: 640px) {
+        font-size: 13px;
+        letter-spacing: 1.2px;
+      }
     }
 
     &__content-list {
@@ -82,17 +86,27 @@
       text-transform: uppercase;
       align-items: center;
       color: $label;
+      @media(max-width: 640px) {
+        gap: 5px;
+      }
 
       h4 {
         margin: 5px 0;
         line-height: 1.8em;
         font-weight: 600;
+        @media(max-width: 640px) {
+          font-size: 13px;
+          line-height: 1.2em;
+        }
       }
 
       span {
         font-size: 16px;
         letter-spacing: 1px;
         word-break: break-word;
+        @media(max-width: 640px) {
+          font-size: 14px;
+        }
       }
 
     }
@@ -144,6 +158,10 @@
         align-items: center;
         background: linear-gradient(135deg, rgba(76, 119, 83, .15) 0, rgba(76, 119, 83, .01) 100%);
         color: $text-color;
+        @media(max-width: 640px) {
+          width: 55px;
+          height: 55px;
+        }
       }
 
       &-desc {
@@ -152,6 +170,10 @@
         line-height: 1.8em;
         font-family: 'Poppins', sans-serif;
         color: $label;
+        @media(max-width: 640px) {
+          font-size: 14px;
+          line-height: 1.5em;
+        }
 
         h4 {
           margin: 10px 0;

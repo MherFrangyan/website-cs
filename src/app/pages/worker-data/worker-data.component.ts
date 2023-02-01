@@ -18,7 +18,7 @@ export class WorkerDataComponent implements AfterViewInit{
     this.nav.isOpened.subscribe(item => {
       switch (item.toLowerCase()) {
         case 'about':
-          this.about.nativeElement.scrollIntoView({behavior: 'smooth', block: 'start', inline: 'start'})
+          window.scrollTo(0, 0)
           break;
         case 'contact':
           this.contact.nativeElement.scrollIntoView({behavior: 'smooth', block: 'start', inline: 'start'})

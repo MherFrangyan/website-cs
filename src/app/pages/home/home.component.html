@@ -13,7 +13,7 @@
   <div class="bubbles">
     <div class="bubble" *ngFor="let i of bubble"></div>
   </div>
-  <div class="home__container">
+  <div class="home__container" *ngIf="!loader">
     <cv-dashboard style="flex: 1"></cv-dashboard>
   </div>
   <cv-loader *ngIf="loader"></cv-loader>

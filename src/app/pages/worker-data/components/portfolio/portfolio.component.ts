@@ -7,6 +7,7 @@ import { faExternalLink } from '@fortawesome/free-solid-svg-icons';
   styleUrls: ['./portfolio.component.scss'],
 })
 export class PortfolioComponent {
+
   public link = faExternalLink;
 
   public portfolioListLeft = [

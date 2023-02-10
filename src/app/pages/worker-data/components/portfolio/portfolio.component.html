@@ -28,7 +28,7 @@
             <div class="workers__data-portfolio-img">
               <img [src]="'assets/image/portfolio/'+ item.img" alt="img">
               <div class="workers__data-portfolio-bgFon">
-                <a href="https://www.airenoworld.com/"
+                <a [href]="item.url"
                    class="workers__data-portfolio-link"
                    target="_blank">
                   <fa-icon [icon]="link" [size]="'2x'"></fa-icon>

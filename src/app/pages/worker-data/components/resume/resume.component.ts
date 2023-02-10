@@ -25,7 +25,8 @@ export class ResumeComponent {
     {id: 7, name: 'Responsive design skills'},
     {id: 8, name: 'Testing and debugging skills'},
     {id: 9, name: 'Web development with JavaScript, Angular'},
-    {id: 10, name: 'Excellent skills in HTML5,CSS3'},
+    {id: 10, name: 'Typescript and RxJS'},
+    {id: 11, name: 'Excellent skills in HTML5,CSS3'},
   ]
 
 }
